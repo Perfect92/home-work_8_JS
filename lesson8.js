@@ -1,4 +1,4 @@
-// Здесь мы создаем кнопку "закрыть" и добавляем ее к каждому элементу списка
+
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -9,7 +9,7 @@ for (i = 0; i < myNodelist.length; i++) {
     myNodelist[i].appendChild(span);
 }
 
-// Нажмимаем на кнопку закрыть, чтобы скрыть текущий элемент списка
+
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -19,7 +19,7 @@ for (i = 0; i < close.length; i++) {
     };
 }
 
-// Добавляем символ "проверено" при нажатии на элемент списка
+
 var list = document.querySelector("ul");
 list.addEventListener(
     "click",
@@ -31,7 +31,7 @@ list.addEventListener(
     false
 );
 
-// Создаем новый элемент списка при нажатии на кнопку "Добавить"
+
 function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
